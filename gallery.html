@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="css/gallery.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="gallery-wrapper">
+            <button class="nav-arrow left" onclick="prevImage()">&#x2039;</button>
+
+            <div class="photo-display">
+                <img id="gallery-image" src="gallery/photo1.jpg" alt="Photo" />
+                <div class="photo-info">
+                    <p id="date" style="color: #FF7B41;">撮影日: 2024年4月</p>
+                    <p id="location" style="color: #FF7B41;">
+                        XX県<br>
+                        <a id="map-link" href="#" target="_blank" style="color: #FF7B41; text-decoration: underline; font-weight: bold;">場所</a>
+                    </p>
+                </div>
+            </div>
+
+            <button class="nav-arrow right" onclick="nextImage()">&#x203A;</button>
+        </div>
+
+        <button class="home-button" onclick="location.href='index.html'">ホームに戻る</button>
+        <div class="footer">
+            <p>&copy; 2025 MOROZUMI Shunsuke. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script src="js/gallery.js"></script>
+</body>
+</html>

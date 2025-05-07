@@ -1,0 +1,18 @@
+# OSによる不要ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ・IDE
+# .vscode/
+
+# npm やビルド関連
+node_modules/
+dist/
+build/
+*.log
+
+# 環境ファイル（環境変数など）
+.env
+
+# バックアップファイル
+backup/

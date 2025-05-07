@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ポートフォリオ</title>
+    <link rel="icon" type="image/png" href="icons/favicon.png" />
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="container">
+
+        <!-- 中央揃え用のラッパー -->
+        <div class="main-wrapper">
+            <div id="main-content" class="main-content">
+                <div class="name-block">
+                    <div class="romaji">MOROZUMI Shunsuke</div>
+                    <div class="name">両角 駿介</div>
+                </div>
+
+                <div class="icon-block">
+                    <img src="icons/icon.jpg" alt="プロフィール画像" class="icon-img" />
+                </div>
+
+                <div class="introduction">
+                    <div class="section-title">PROFILE</div>
+                    <p class="intro-text">
+                        芝浦工業大学 在学中<br>
+                        工学部 情報工学科<br>
+                        長野県茅野市 出身<br>
+                        東京都江東区 在住<br>
+                    </p>
+                </div>
+
+                <div class="skills-icons">
+                    <div class="section-title">SKILLS</div>
+                    <div class="skills-icon-row">
+                        <img src="skills/python.png" alt="Python" />
+                        <img src="skills/c.png" alt="C" />
+                        <img src="skills/java.png" alt="Java" />
+                        <img src="skills/vscode.png" alt="VSCode" />
+                        <img src="skills/github.png" alt="Github" />
+                        <img src="skills/photoshop.png" alt="PhotoShop" />
+                        <img src="skills/xd.png" alt="Adobe Xd" />
+                        <!-- <img src="skills/excel.png" alt="Excel" /> -->
+                        <!-- 必要に応じて追加 -->
+                    </div>
+                </div>
+
+                <div class="sns-buttons">
+                    <a href="sns.html" class="sns-button">SNS</a>
+                    <a href="https://github.com/Morosy" class="sns-button">GitHub</a>
+                    <a href="gallery.html" class="sns-button">Gallery</a>
+                    <a href="comingsoon.html" class="sns-button">Works</a>
+                </div>
+
+                <div class="contact-section">
+                    <button id="contact-btn" class="contact-button">CONTACT</button>
+                    <div id="email-address" class="email-address">al23092@shibaura-it.ac.jp</div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- もっと見るボタン -->
+        <button id="see-more-btn" class="see-more-button">もっと見る</button>
+
+        <!-- 追加情報 -->
+        <div id="more-content">
+            <div class="hobbies">
+                <div class="section-title">趣味</div>
+                <ul class="hobby-list">
+                    <li>ドライブ</li>
+                    <li>自転車</li>
+                    <li>写真撮影</li>
+                    <li>モータースポーツ観戦</li>
+                </ul>
+            </div>
+
+            <div class="skills">
+                <div class="skills-title">免許・資格</div>
+                <table class="skills-table">
+                    <thead>
+                        <tr><th>取得年月</th><th>内容</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2022年02月</td><td>実用英語技能検定 2級 取得</td></tr>
+                        <tr><td>2023年07月</td><td>普通自動車免許 取得</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="career">
+                <div class="section-title">経歴</div>
+                <table class="content-table">
+                    <thead>
+                        <tr><th>期間</th><th>内容</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2020年03月</td><td>茅野市立永明中学校 卒業</td></tr>
+                        <tr><td>2020年04月</td><td>長野県諏訪二葉高等学校 入学</td></tr>
+                        <tr><td>2023年03月</td><td>長野県諏訪二葉高等学校 卒業</td></tr>
+                        <tr><td>2023年04月</td><td>芝浦工業大学 入学</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="experience">
+                <div class="section-title">経験・スキル</div>
+                <table class="content-table">
+                    <thead>
+                        <tr><th>期間</th><th>内容</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>2021年07月 - 2022年07月</td><td>諏訪二葉高校 陸上競技部 部長</td></tr>
+                        <tr><td>2024年09月</td><td>gPBL Data Science Competition with ITS (Indonesia) 参加 (機械学習&チーム開発)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="back-to-top-wrapper">
+                <button class="back-to-top-button" onclick="scrollToTop()">トップへ戻る</button>
+            </div>
+            <div class="footer">
+                <p>&copy; 2025 MOROZUMI Shunsuke. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

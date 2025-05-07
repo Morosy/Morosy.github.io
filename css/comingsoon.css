@@ -1,0 +1,52 @@
+/* comingsoon.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    border: 8px solid #FF7B41;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.coming-soon-block {
+    margin-top: 20px;
+}
+
+.section-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF7B41;
+    margin-bottom: 20px;
+}
+
+.back-home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF7B41;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.back-home-button:hover {
+    background-color: #E66A30;
+}

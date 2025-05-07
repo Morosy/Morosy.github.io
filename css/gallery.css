@@ -1,0 +1,181 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    border: 12px solid #FF7B41;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-wrapper {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.photo-display {
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.photo-display img {
+    max-height: 65vh;
+    max-width: 90vw;
+    object-fit: contain;
+    border: 6px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.photo-info {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.nav-arrow {
+    font-size: 2.5em;
+    background: none;
+    border: none;
+    color: #FF7B41;
+    cursor: pointer;
+    padding: 20px;
+    transition: color 0.2s;
+    user-select: none;
+}
+
+.nav-arrow:hover {
+    color: #E66A30;
+}
+
+.left {
+    position: absolute;
+    left: 10px;
+}
+
+.right {
+    position: absolute;
+    right: 10px;
+}
+
+.home-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #FF7B41;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #E66A30;
+}
+
+.footer {
+    font-size: 0.75em;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.photo-display {
+    position: relative;
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px; /* 情報欄用の余白 */
+}
+
+.photo-display img {
+    width: auto;
+    max-height: 60vh; /* 高さ制限だけにして、4:3に収まるように */
+    aspect-ratio: 4 / 3; /* 画像比率指定（CSS対応ブラウザ） */
+    object-fit: contain;
+    transition: opacity 0.5s ease;
+    border: 6px solid white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.photo-info {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+.photo-info a {
+    color: #0077cc;
+    text-decoration: underline;
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 0.5s forwards;
+}
+.slide-in-right {
+    animation: slideInFromRight 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#date {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF7B41;
+}
+
+#location {
+    font-size: 1.2m;
+    font-weight: bold;
+    color: #FF7B41;
+    text-align: center;
+}
+
+#location a {
+    font-size: 1.2em;
+    color: #FF7B41;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#location span {
+    display: block;
+    font-size: 0.8em;
+    color: #888;
+    margin-top: 4px;
+}
